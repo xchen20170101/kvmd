@@ -1,9 +1,9 @@
 li(id="shortcuts-dropdown" class="right")
-	a(class="menu-button" href="#") Shortcuts
+	a(class="menu-button" href="#") 快捷键
 	div(class="menu")
 		div(class="text")
-			b Quick keyboard shortcuts#[br]
-			sub Also see #[i System &rarr; Show keyboard]
+			b 快速键盘按键#[br]
+			sub 另见 #[i 系统 &rarr; 显示键盘]
 		hr
 		div(class="buttons")
 			div(class="buttons-row")
@@ -25,11 +25,15 @@ li(id="shortcuts-dropdown" class="right")
 				button(data-force-hide-menu data-shortcut="MetaLeft Space" class="row50") &bull; Win+Space
 				button(data-force-hide-menu data-shortcut="AltLeft F4" class="row50") &bull; Alt+F4
 			hr
+			div(class="buttons-row")
+				button(data-force-hide-menu data-shortcut="ControlLeft AltLeft F1" class="row50") &bull; Ctrl+Alt+F1
+				button(data-force-hide-menu data-shortcut="ControlLeft AltLeft F2" class="row50") &bull; Ctrl+Alt+F2
+			hr
 			button(data-force-hide-menu data-shortcut="ControlLeft AltLeft Delete") &bull; Ctrl+Alt+Del
 		hr
 		div(class="text")
 			| &darr; &bull; Alt+SysRq+... <sup><i>linux magic
-			| #[a(target="_blank" href="https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html") help]</i></sup>
+			| #[a(target="_blank" href="https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html") 帮助]</i></sup>
 		hr
 		div(class="buttons")
 			div(class="buttons-row")
@@ -56,4 +60,4 @@ li(id="shortcuts-dropdown" class="right")
 				each title, key in sysrq
 					button(data-shortcut=`AltLeft PrintScreen Key${key}` data-shortcut-confirm="hid-sysrq-ask-switch" class="row16" style="text-align: center;" title=`${title}`) #{key}
 		hr
-		+menu_switch("hid-sysrq-ask-switch", "Ask the magic confirmation", true, true)
+		+menu_switch("hid-sysrq-ask-switch", "询问magic确认", true, true)

@@ -1,30 +1,30 @@
 li(id="macro-dropdown" class="right")
 	a(class="menu-button" href="#")
 		+navbar_led("hid-recorder-led", "led-gear")
-		span Macro
+		span 宏指令
 	div(class="menu")
 		div(class="text")
-			b Record and play HID/ATX/GPIO actions#[br]
-			sub For security reasons, the record will not be saved on the PiKVM
+			b 记录和播放 HID/ATX/GPIO 动作#[br]
+			sub 出于安全原因，记录不会保存在PiKVM上
 		hr
 		div(class="buttons buttons-row")
-			button(disabled data-force-hide-menu id="hid-recorder-record" class="row25") &bull; Rec
-			button(disabled id="hid-recorder-stop" class="row25") Stop
-			button(disabled id="hid-recorder-play" class="row25") Play
-			button(disabled id="hid-recorder-clear" class="row25") Clear
+			button(disabled data-force-hide-menu id="hid-recorder-record" class="row25") &bull; 记录
+			button(disabled id="hid-recorder-stop" class="row25") 停止
+			button(disabled id="hid-recorder-play" class="row25") 播放
+			button(disabled id="hid-recorder-clear" class="row25") 清除
 		hr
 		table(class="kv")
 			tr
-				td Script time:
+				td 脚本时间:
 				td(colspan="2" id="hid-recorder-time" class="value") 00:00:00.0
 			tr
-				td Scripted events:
+				td 脚本事件:
 				td(id="hid-recorder-events-count" class="value") 0
-				td #[sup #[i include delays]]
+				td #[sup #[i 包括延误]]
 		hr
-		+menu_switch("hid-recorder-loop-switch", "Infinite loop playback", false, false)
+		+menu_switch("hid-recorder-loop-switch", "无限循环播放", false, false)
 		hr
 		input(type="file" id="hid-recorder-new-script-file")
 		div(class="buttons buttons-row")
-			button(disabled id="hid-recorder-upload" class="row50") Upload script
-			button(disabled id="hid-recorder-download" class="row50") Download script
+			button(disabled id="hid-recorder-upload" class="row50") 上传脚本
+			button(disabled id="hid-recorder-download" class="row50") 下载脚本

@@ -1,7 +1,7 @@
 extends start.pug
 
 append vars
-	- title = "PiKVM Index"
+	- title = "PiKVM 首页"
 	- main_js = "index/main"
 	- css_list = css_list.concat(["window", "modal", "index/index"])
 
@@ -12,7 +12,7 @@ block start
 				img(class="svg-gray" src=`${svg_dir}/logo.svg` alt="PiKVM" height="40")
 			td
 				table
-					tr #[td(colspan="2" class="title") The Open Source IP-KVM]
+					tr #[td(colspan="2" class="title") 开源IP-KVM]
 					tr
 						td(colspan="2" class="copyright")
 							| Copyright &copy; 2018-2022 #[a(target="_blank" href="mailto:mdevaev@gmail.com") Maxim Devaev]
@@ -20,27 +20,27 @@ block start
 	hr
 	table
 		td(class="server")
-			td Server:
+			td 服务器:
 			td #[a(id="kvmd-meta-server-host" target="_blank" href="/api/info")]
 
 	hr
 	div(id="apps-box")
-		h4 Loading ...
+		h4 加载中 ...
 
 	div(id="app-keyboard-warning")
 		hr
 		p(class="text")
-			| Please note that when you are working with a KVM session or another application that captures the keyboard,
-			| you can't use some keyboard shortcuts such as Ctrl+Alt+Del (which will be caught by your OS) or Ctrl+W (caught by your browser).
+			| 请注意，当您使用 KVM 会话或其他捕获键盘的应用程序时,
+			| 您不能使用某些键盘快捷键，例如 Ctrl+Alt+Del（将被您的操作系统捕获）或Ctrl+W（被您的浏览器捕获）。
 		p(class="text")
-			| To override this limitation you can use #[a(target="_blank" href="https://google.com/chrome") Google Chrome]
-			| or #[a(target="_blank" href="https://chromium.org/Home") Chromium] in application mode.
+			| 要覆盖此限制，您可以使用 #[a(target="_blank" href="https://google.com/chrome") 谷歌浏览器]
+			| 或 #[a(target="_blank" href="https://chromium.org/Home") Chromium] 在应用程序模式。
 		div(id="app-text" class="code")
 
 	hr
 	p(class="text credits")
-		a(target="_blank" href="https://pikvm.org") PiKVM Project
+		a(target="_blank" href="https://pikvm.org") PiKVM项目
 		| &nbsp; | &nbsp;
-		a(target="_blank" href="https://docs.pikvm.org") Documentation
+		a(target="_blank" href="https://docs.pikvm.org") 文档
 		| &nbsp; | &nbsp;
-		a(target="_blank" href="https://pikvm.org/support") Support
+		a(target="_blank" href="https://pikvm.org/support") 支持

@@ -11,14 +11,20 @@ block body
 			div(id="login")
 				table
 					tr
-						td Username:
+						td 用户名:&nbsp;
 						td #[input(type="text" id="user-input")]
 					tr
-						td Password:
+						td 密码:&nbsp;
 						td #[input(type="password" id="passwd-input")]
+					//- tr
+					//- 	td 2FA code:&nbsp;
+					//- 	td #[input(type="text" id="code-input" placeholder="if enabled")]
+					tr
+						td(colspan=2)
+							hr
 					tr
 						td
-						td #[button(id="login-button" class="key") Login]
+						td #[button(id="login-button" class="key") 登录]
 
 	ul(class="footer")
 		li(class="footer-left")

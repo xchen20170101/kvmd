@@ -1,7 +1,7 @@
 extends ../base.pug
 
 append vars
-	- title = "PiKVM Session"
+	- title = "PiKVM 首页"
 	- main_js = "kvm/main"
 	- body_class = "body-no-select"
 	- css_list = css_list.concat(["navbar", "window", "modal", "led", "slider", "switch", "radio", "progress", "keypad", "tabs"])
@@ -14,8 +14,8 @@ block body
 	ul(class="footer")
 		li(id="kvmd-meta-server-host" class="footer-left")
 		li(class="footer-right")
-			a(target="_blank" href="https://pikvm.org") PiKVM Project
+			a(target="_blank" href="https://pikvm.org") PiKVM项目
 			| &nbsp; | &nbsp;
-			a(target="_blank" href="https://docs.pikvm.org") Documentation
+			a(target="_blank" href="https://docs.pikvm.org") 文档
 			| &nbsp; | &nbsp;
-			a(target="_blank" href="https://pikvm.org/support") Support
+			a(target="_blank" href="https://pikvm.org/support") 支持

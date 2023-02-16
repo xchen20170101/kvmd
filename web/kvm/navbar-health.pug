@@ -5,18 +5,18 @@ div(id="hw-health-dropdown" class="hidden")
 			+navbar_led("hw-health-overheating-led", "led-overheating", "hidden")
 		div(class="menu")
 			+menu_message("warning", "Raspberry Pi's health is at risk")
-				| This is not a drill! A red icon indicates a current issue,#[br]
-				| a yellow one that was observed since the device booted up
+				| 这不是演示！红色图标表示当前问题,#[br]
+				| 自设备启动后观察到的黄色
 			div(id="hw-health-message-undervoltage" class="hidden")
 				hr
 				+menu_message("led-undervoltage", "Undervoltage detected", "led-gray")
-					| Make sure your power supply and cabling are providing#[br]
-					| enough power to the Raspberry Pi (3A minimum)
+					| 确保您的电源和电缆提供#[br]
+					| 足够的电为树莓派 (3A minimum)
 			div(id="hw-health-message-overheating" class="hidden")
 				hr
 				+menu_message("led-overheating", "Overheating detected", "led-gray")
-					| Frequency capping due to overheating,#[br]
-					| improve cooling of the Raspberry Pi
+					| 过热导致的频次上限,#[br]
+					| 改善树莓派的散热
 
 div(id="fan-health-dropdown" class="hidden")
 	li(class="left")
@@ -24,9 +24,9 @@ div(id="fan-health-dropdown" class="hidden")
 			+navbar_led("fan-health-led", "led-fan", "hidden")
 		div(class="menu")
 			+menu_message("warning", "Raspberry Pi's health is at risk")
-				| This is not a drill! A red icon indicates a current issue,#[br]
-				| a yellow one that was observed in the past
+				| 这不是演示！红色图标表示当前问题,#[br]
+				| 过去观察到的黄色
 			div(id="fan-health-message-fail")
 				hr
 				+menu_message("led-fan", "Fan failed", "led-gray")
-					| A fan error occured, please check the log
+					| 发生风扇错误，请检查日志

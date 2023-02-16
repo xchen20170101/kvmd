@@ -5,13 +5,13 @@ li(id="atx-dropdown" class="right feature-disabled")
 		span ATX
 	div(class="menu")
 		div(class="text")
-			b Control the server's power#[br]
-			sub Use the short click for ACPI shutdown
+			b 控制服务器的电源#[br]
+			sub 使用短按关闭 ACPI
 		hr
 		+menu_switch("atx-ask-switch", "Ask click confirmation", true, true)
 		hr
 		div(class="buttons")
-			button(disabled data-force-hide-menu id="atx-power-button") &bull; Click Power #[sup #[i short]]
-			button(disabled data-force-hide-menu id="atx-power-button-long") &bull; Click Power #[sup #[i long]]
+			button(disabled data-force-hide-menu id="atx-power-button") &bull; 点击电源 #[sup #[i short]]
+			button(disabled data-force-hide-menu id="atx-power-button-long") &bull; 点击电源 #[sup #[i long]]
 			hr
-			button(disabled data-force-hide-menu id="atx-reset-button") &bull; Click Reset
+			button(disabled data-force-hide-menu id="atx-reset-button") &bull; 单击重置
